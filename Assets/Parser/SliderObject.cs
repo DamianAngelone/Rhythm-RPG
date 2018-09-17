@@ -14,6 +14,7 @@ namespace OsuParser
             Position = new Point(x, y);
             StartTime = startTime;
             PixelLength = pixelLength;
+            HitObjectType = HitObjectType.Slider;
             
         }
 

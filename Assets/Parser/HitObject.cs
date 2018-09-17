@@ -16,6 +16,7 @@
 
         protected Point Position;
         protected float StartTime { get; set; }
+        protected HitObjectType HitObjectType { get; set; }
 
         public float StartTimeInMs()
         {
@@ -25,6 +26,11 @@
         public float StartTimeInBeats(float msPerBeat)
         {
             return StartTime/msPerBeat;
+        }
+
+        public HitObjectType GetHitObjectType()
+        {
+            return HitObjectType;
         }
     }
 }

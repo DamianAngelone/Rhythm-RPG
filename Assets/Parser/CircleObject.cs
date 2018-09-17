@@ -11,6 +11,7 @@ namespace OsuParser
         {
             Position = new Point(x, y);
             StartTime = startTime;
+            HitObjectType = HitObjectType.Circle;
         }
     }
 }

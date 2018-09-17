@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
-
 using System.Linq;
 using System.Reflection;
 using System.Text;
@@ -30,7 +29,7 @@ namespace OsuParser
         //HitObjects
         public List<HitObject> HitObjects = new List<HitObject>();
 
-        public Beatmap(string beatmapFile = "")
+        public Beatmap(String beatmapFile = "")
         {
             if (beatmapFile != "")
             {
@@ -103,7 +102,7 @@ namespace OsuParser
                     else if((type & HitObjectType.Slider) > 0)
                     {
                         //Add new slider hit object
-                        HitObjects.Add(new SliderObject(Convert.ToInt32(values[0]), Convert.ToInt32(values[1]), (float)Convert.ToDouble(values[2]), (float)Convert.ToDouble(values[7])));
+                        HitObjects.Add(new SliderObject(Convert.ToInt32(values[0]), Convert.ToInt32(values[1]), (float)Convert.ToDouble(values[2]), (float)Convert.ToDouble(Convert.ToInt32(values[7]))));
                     }
                     //[Spinner]
                     else if((type & HitObjectType.Spinner) > 0)

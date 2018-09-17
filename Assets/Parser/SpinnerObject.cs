@@ -14,6 +14,7 @@ namespace OsuParser
             Position = new Point(x, y);
             StartTime = startTime;
             EndTime = endTime;
+            HitObjectType = HitObjectType.Spinner;
         }
 
         public float EndTimeInMs(float beatLength, float sliderMultiplier)
