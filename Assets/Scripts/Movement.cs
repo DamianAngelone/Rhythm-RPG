@@ -34,8 +34,6 @@ public class Movement : MonoBehaviour
 
         transform.position = Vector2.Lerp(SpawnPos, RemovePos, perc);// (BeatsShownInAdvance - (BeatOfThisNote - SongPosInBeats)) / BeatsShownInAdvance);
 
-        //Debug.Log("Cur: " + transform.position);
-        //Debug.Log("Rem: " + RemovePos);
         if (transform.position == RemovePos)
         {
             Debug.Log("DELETE NOTE");
